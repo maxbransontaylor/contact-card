@@ -6,7 +6,7 @@
   "scripts": {
     "build": "webpack --mode development",
     "dev": "webpack-dev-server",
-    "start": "webpack --watch"
+    "start": "npm run build && cd server && node server.js"
   },
   "author": "",
   "license": "ISC",
@@ -22,6 +22,7 @@
   },
   "dependencies": {
     "@popperjs/core": "^2.11.6",
-    "bootstrap": "^5.2.2"
+    "bootstrap": "^5.2.2",
+    "idb": "^7.1.0"
   }
 }
